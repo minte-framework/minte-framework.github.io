@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:nodeID="service">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+	<endpoint xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://89.163.148.59:9997/blazegraph/namespace/kb/sparql"/>
+	<endpoint xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://89.163.148.59:9997/bigdata/LBS/namespace/kb/sparql"/>
+	<supportedLanguage xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/sparql-service-description#SPARQL10Query"/>
+	<supportedLanguage xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/sparql-service-description#SPARQL11Query"/>
+	<supportedLanguage xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/sparql-service-description#SPARQL11Update"/>
+	<feature xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/sparql-service-description#BasicFederatedQuery"/>
+	<feature xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/sparql-service-description#UnionDefaultGraph"/>
+	<feature xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.bigdata.com/rdf#/features/KB/Mode/Quads"/>
+	<inputFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/RDF_XML"/>
+	<inputFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/N-Triples"/>
+	<inputFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+	<inputFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/N3"/>
+	<inputFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.wiwiss.fu-berlin.de/suhl/bizer/TriG/Spec/"/>
+	<inputFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://sw.deri.org/2008/07/n-quads/#n-quads"/>
+	<inputFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_XML"/>
+	<inputFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_JSON"/>
+	<inputFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
+	<inputFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_TSV"/>
+	<resultFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/RDF_XML"/>
+	<resultFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/N-Triples"/>
+	<resultFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+	<resultFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/N3"/>
+	<resultFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.wiwiss.fu-berlin.de/suhl/bizer/TriG/Spec/"/>
+	<resultFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_XML"/>
+	<resultFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_JSON"/>
+	<resultFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
+	<resultFormat xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_TSV"/>
+	<entailmentRegime xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:resource="http://www.w3.org/ns/entailment/Simple"/>
+	<defaultDataset xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:nodeID="defaultDataset"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultDataset">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
+	<rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+	<title xmlns="http://purl.org/dc/terms/">kb</title>
+	<Namespace xmlns="http://www.bigdata.com/rdf#/features/KB/">kb</Namespace>
+	<sparqlEndpoint xmlns="http://rdfs.org/ns/void#" rdf:resource="http://89.163.148.59:9997/blazegraph/namespace/kb/sparql/kb/sparql"/>
+	<sparqlEndpoint xmlns="http://rdfs.org/ns/void#" rdf:resource="http://89.163.148.59:9997/bigdata/LBS/namespace/kb/sparql/kb/sparql"/>
+	<uriRegexPattern xmlns="http://rdfs.org/ns/void#">^.*</uriRegexPattern>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_company"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_follower"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_following_since"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_follows"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_forked_from"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_has_owner"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_login"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_organization_is_joined"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_organization_joined_at"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_organization_joined_by"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_deleted"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_description"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_join_event_created_at"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_joined"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_joining_user"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_language_bytes"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_language_is"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_language_repo"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_language_timestamp"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_name"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_pull_request_id"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_pull_request_intra_branch"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_city"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_country_code"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_created_at"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_deleted"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_fake"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_is_org"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_lat"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_lng"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_location"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_or_project"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_state"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/programming_language_name"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/pull_request_base_commit"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/pull_request_base_project"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/pull_request_head_commit"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/pull_request_head_project"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/repository_created_at"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/repository_language"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/repository_url"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns"/>
+	<defaultGraph xmlns="http://www.w3.org/ns/sparql-service-description#" rdf:nodeID="defaultGraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Graph"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2717664071</triples>
+	<entities xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">245069646</entities>
+	<properties xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</properties>
+	<classes xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</classes>
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x57"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x57">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">456445637</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x58"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x58">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_follower#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">154516106</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x59"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x59">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_following_since#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">154516106</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x60"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x60">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_follows#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">154516106</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x61"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x61">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_or_project#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">154516106</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x62"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x62">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_language_bytes#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">114540030</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x63"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x63">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_language_is#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">114540030</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x64"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x64">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_language_repo#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">114540030</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x65"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x65">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_language_timestamp#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">114540030</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x66"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x66">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_name#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">104333209</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x67"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x67">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/repository_created_at#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">104333209</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x68"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x68">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/repository_url#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">104333209</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x69"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x69">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_has_owner#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">104333208</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x70"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x70">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_deleted#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">104333208</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x71"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x71">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_description#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">94822397</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x72"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x72">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/repository_language#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">51994171</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x73"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x73">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_pull_request_id#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">42590151</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x74"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x74">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_pull_request_intra_branch#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">42590151</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x75"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x75">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/pull_request_base_commit#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">42590151</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x76"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x76">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/pull_request_base_project#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">42590151</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x77"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x77">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/pull_request_head_project#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">42365388</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x78"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x78">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/pull_request_head_commit#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">42334071</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x79"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x79">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_forked_from#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">39128807</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x80"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x80">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_login#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">28314551</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x81"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x81">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_created_at#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">28314551</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x82"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x82">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_fake#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">28314551</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x83"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x83">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_deleted#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">28314550</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x84"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x84">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_is_org#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">28314550</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x85"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x85">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_lat#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">17143812</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x86"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x86">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_lng#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">17143812</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x87"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x87">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_join_event_created_at#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">11484189</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x88"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x88">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_joined#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">11484189</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x89"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x89">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_joining_user#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">11484189</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x90"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x90">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_location#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2653724</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x91"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x91">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_country_code#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2393176</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x92"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x92">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_state#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1810077</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x93"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x93">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user_city#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1685717</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x94"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x94">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_company#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1465300</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x95"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x95">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_organization_is_joined#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">667034</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x96"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x96">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_organization_joined_at#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">667034</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x97"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x97">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_organization_joined_by#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">667034</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<propertyPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x98"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x98">
+	<property xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/programming_language_name#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">369</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<classPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x99"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x99">
+	<class xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_follow_event#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">154516106</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<classPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x100"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x100">
+	<class xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_language#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">114540030</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<classPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x101"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x101">
+	<class xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">104333208</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<classPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x102"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x102">
+	<class xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_pull_request#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">42590151</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<classPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x103"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x103">
+	<class xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_user#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">28314550</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<classPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x104"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x104">
+	<class xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_project_join_event#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">11484189</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<classPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x105"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x105">
+	<class xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/github_organization_join_event#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">667034</triples>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="defaultGraph">
+	<classPartition xmlns="http://rdfs.org/ns/void#" rdf:nodeID="node1dc349oc4x106"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1dc349oc4x106">
+	<class xmlns="http://rdfs.org/ns/void#" rdf:resource="http://semangit.de/ontology/programming_language#"/>
+	<triples xmlns="http://rdfs.org/ns/void#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">369</triples>
+</rdf:Description>
+
+</rdf:RDF>
