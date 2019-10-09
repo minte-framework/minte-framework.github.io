@@ -66,11 +66,7 @@
 				<h1 class="w3-xxxlarge w3-text-blue-grey"><b>News</b></h1>
 				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
 				<ul class="w3-ul">
-					<li class="w3">- August Dump is still delayed due to missing new data from GHtorrent. (13th August 2019) <br>&nbsp;&nbsp;&nbsp;-
-					<li class="w3">- June Dump was uploaded. (15th June 2019) <br>&nbsp;&nbsp;&nbsp;- Locations are now encoded as http://dbpedia.org/ontology/city, enabling an interlinkage to DBpedia<br>&nbsp;&nbsp;&nbsp;- Fixed faulty generation of Issue IDs </li>
-					<li class="w3">- Update links and texts on Homepage (20 April 2010)</li>
-					<li class="w3">- December dump will be skipped due to missing input data (17th Dec 2018)</li>
-					<li class="w3">- Added Microsoft/Mac processing instructions (10th Dec 2018)</li>
+					<li class="w3">- First version of the website, it is still under construction! (9th Oct 2019)</li>
 				</ul>
 			</div>
 			
@@ -78,21 +74,20 @@
 			<div class="w3-container" id="downloads" style="margin-top:75px">
 				<h1 class="w3-xxxlarge w3-text-blue-grey"><b>Downloads.</b></h1>
 				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
-				<p>You can download either a commulattive dump from the recent months or the SemanGit Scripts for the generation of a single or multiple dumps. If you need the data of an older dump like 2016-03-01, please download the linux script and compute it manually.</p>
+				<p>You can download either the source code or docker images to start working with the MINTE Framework.</p>
 			</div>
 			<div class="w3-row-padding">
-				<div class="w3-half w3-margin-bottom">
+                <div class="w3-half">
+                    <ul class="w3-ul w3-light-grey w3-center">
+                        <li class="w3-text-green w3-xlarge w3-padding-32"><h2>Installation Instructions</h2></li>
+                        <li class="w3-padding-16"><h3><a href="https://github.com/minte-framework">Dockers</a></h3></li>
+                    </ul>
+                </div>
+                <div class="w3-half w3-margin-bottom">
 					<ul class="w3-ul w3-light-grey w3-center">
-						<li class="w3-dark-grey w3-xlarge w3-padding-32"><h2>Dumps</h2></li>
-						<li class="w3-padding-16"><a href="https://drive.google.com/file/d/1gwnTwCfRx4tw2MZqquwxEg21es8n0oN0/view?usp=sharing">April 2019 </a></li>
-						<li class="w3-padding-16"><a href="https://drive.google.com/open?id=1V-0hIrjW2g6T-88dheDoSrT7QgYEmR0U"> June 2019 </a></li>
-					</ul>
-				</div>
-				<div class="w3-half">
-					<ul class="w3-ul w3-light-grey w3-center">
-						<li class="w3-text-green w3-xlarge w3-padding-32"><h2>Scripts and Instructions</h2></li>
-						<li class="w3-padding-16"><h3><a href="https://github.com/SemanGit/LinuxDownloader/archive/master.zip">Linux Download Script</a></h3><hr> <small>A short script which automatically downloads and transforms the data to rdf. Compatible with all common Linux distribution. SHA256: 13069e7b 30f9f380 35243113 864c99cf fe62e07c bc9e2d3a 2486996c cea71411 </small></li>
-						<li class="w3-padding-16"><h3><a href="https://github.com/SemanGit/SemanGit/blob/master/Documentation/instructions/SemanGit_Instructions.pdf"> Windows/Mac Instructions</a></h3><hr> Instructions on the manual processing steps required to generate the SemanGit RDF</li>
+						<li class="w3-dark-grey w3-xlarge w3-padding-32"><h2>Mappings</h2></li>
+						<li class="w3-padding-16"><a href="https://github.com/minte-framework">Social Networks</a></li>
+						<li class="w3-padding-16"><a href="https://github.com/minte-framework">CSV files</a></li>
 					</ul>
 				</div>
 			</div>
@@ -140,63 +135,9 @@
 						    </div>
 					    </div>
 				    </div>
-
-				<div class="w3-col m4 w3-margin-bottom">
-					<div class="w3-light-grey">
-						<div class="w3-container">
-							<h3><center>Datasets<br> (non-commerical)</center></h3>
-							<p><center><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></center><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> in accordance with <a href="http://ghtorrent.org/faq.html"> The GHtorrent project </a></p><hr>
-                            <p> We thank Georgios Gousios for proving the ghtorrent - Dataset.
-                        <li>
-                            <a class="url" href="http://www.gousios.gr/bibliography/G13.html"><span class="title">The GHTorrent dataset and tool suite</span></a><br>
-                            <span class="author">Gousios, Georgios</span><br>
-                            <span class="booktitle">Proceedings of the 10th Working Conference on Mining Software Repositories</span>
-    
-                            <span class="">
-                                p. <span class="pages">233--236</span>.
-                            </span>
-                            <span class="">
-    <span class="year">2013</span></span>
-                            <br>
-                            <a class="bibtexCodeLink" bibtexcode="@inproceedings{G13,
-                          author = {Gousios, Georgios},
-                          title = {The {GHT}orrent dataset and tool suite},
-                          year = {2013},
-                          month = may,
-                          pages = {233--236},
-                          numpages = {4},
-                          booktitle = {Proceedings of the 10th Working Conference on Mining Software Repositories},
-                          series = {MSR '13},
-                          isbn = {978-1-4673-2936-1},
-                          location = {San Francisco, CA, USA},
-                          url = {/pub/ghtorrent-dataset-toolsuite.pdf},
-                          github = {gousiosg/github-mirror},
-                          speakerdeck = {75bea5909fbb0130f0eb364613f6f036},
-                          award = {MSR2013: Best data showcase paper},
-                          note = {Best data showcase paper award}
-                        }">
-                                [bibtex]
-                            </a>
-                            <br><br>
-                        </li>
-                        </p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="w3-col m4 w3-margin-bottom">
-					<div class="w3-light-grey">
-						<div class="w3-container">
-						<h3><center>Datasets<br> (commerical)</center></h3>
-							For the commercial usage of our Datsets, only the restrictions by our data provider ghtorrent.com
-							apply.  Detailed information and contacts for the commercial usage can be found on <a href="http://ghtorrent.org/faq.html"> ghtorrent/faq </a>
-                            </p>
-						</div>
-					</div>
-				</div>
 			</div>
 
-						<div class="w3-row-padding w3-grayscale">
+			<div class="w3-row-padding w3-grayscale">
 				<div class="w3-col m4 w3-margin-bottom">
 					<div class="w3-light-grey">
 						<div class="w3-container">
@@ -210,7 +151,7 @@
 			<!-- End page content -->
 		</div>
 
-			<!-- W3.CSS Container -->
+            <!-- W3.CSS Container -->
 			<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
 			    <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
 		    </div>
