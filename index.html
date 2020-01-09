@@ -55,10 +55,11 @@
 			<div class="w3-container" id="about" style="margin-top:75px">
 	            <h1 class="w3-xxxlarge w3-text-blue-grey"><b>About</b></h1>
 	            <hr style="width:50px;border:5px solid blue-grey" class="w3-round">
-                MINTE is an integration framework that relies on both: knowledge stated in RDF vocabularies and semantic similarity measures to merge heterogenous data into a consolidated RDF graph.
+				MINTE is a semantic data integration framework that collects and integrates heterogeneous data sources into an actionable knowledge graph (i.e., organizations can build valuable services on top of the knowledge graph such as Semantic Search, Analytics, and Conversational Assistants).
+				MINTE relies on both: knowledge stated in RDF vocabularies and semantic similarity measures to merge heterogeneous data into a consolidated RDF graph.
                 MINTE follows a two-fold approach to solve the problem of integrating RDF graphs.
-                In the first step, MINTE implements a 1-1 weighted perfect matching algorithm to identify semantically equivalent RDF entities in different graphs.
-                Then, MINTE relies on different fusion policies to merge triples from these semantically equivalent RDF entities.
+                In the first step, MINTE transforms data into RDF entities, then MINTE implements a 1-1 weighted matching algorithm to identify semantically equivalent RDF entities in different data sources.
+                Then, MINTE relies on different fusion policies to integrate triples from these semantically equivalent RDF entities.				
 			</div>
 
 			<!-- News -->
@@ -101,8 +102,14 @@
 					</li>
 			</div>
 
-            While not counting as a publication in the scientific sense, there exists <a href="https://github.com/SemanGit/SemanGit/blob/master/Documentation/project_report.pdf"> this project report </a> for the initial version of the converter
-			written for module CS-4313 at the University of Bonn.
+            The following publications are the foundations of the MINTE Framework:
+			
+			<ul>
+				<li>Mayesha Tasnim, Diego Collarana, Damien Graux, Mikhail Galkin, Maria-Esther Vidal: COMET: A Contextualized Molecule-Based Matching Technique. DEXA (1) 2019: 175-185</li>
+				<li>Diego Collarana, Mikhail Galkin, Christoph Lange, Simon Scerri, Sören Auer, Maria-Esther Vidal: Synthesizing Knowledge Graphs from Web Sources with the MINTE+ Framework. International Semantic Web Conference (2) 2018: 359-375</li>
+				<li>Diego Collarana, Mikhail Galkin, Ignacio Traverso Ribón, Christoph Lange, Maria-Esther Vidal, Sören Auer: Semantic Data Integration for Knowledge Graph Construction at Query Time. ICSC 2017: 109-116</li>
+				<li>Diego Collarana, Mikhail Galkin, Ignacio Traverso Ribón, Maria-Esther Vidal, Christoph Lange, Sören Auer: MINTE: semantically integrating RDF graphs. WIMS 2017: 22:1-22:11</li>
+			</ul>
 
 			<!-- License -->
 			<div class="w3-container" id="license" style="margin-top:75px">
@@ -137,6 +144,12 @@
 				    </div>
 			</div>
 
+			<!-- Contact -->
+			<div class="w3-container" id="contact" style="margin-top:75px">
+				<h1 class="w3-xxxlarge w3-text-blue-grey"><b>Contact</b></h1>
+				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
+				<p>The MINTE Team:</p>
+			</div>
 			<div class="w3-row-padding w3-grayscale">
 				<div class="w3-col m4 w3-margin-bottom">
 					<div class="w3-light-grey">
@@ -149,6 +162,7 @@
 				</div>
 			</div>
 			<!-- End page content -->
+			
 		</div>
 
             <!-- W3.CSS Container -->
